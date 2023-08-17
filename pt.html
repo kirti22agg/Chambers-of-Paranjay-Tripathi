@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paranjay Tripathi</title>
+    <link rel="stylesheet" href="pt.css"/>
+    <script src="https://kit.fontawesome.com/6e42abb630.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="logo"><img src="C:\Users\krishna aggarwal\OneDrive\Desktop\chambers of pt\images\logo.png " width="50 px" height="50 px" alt="logo"></div>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul class="nav nav-tabs">
+            <li class="active"> <a href="about.html">About</a></li>
+            <li> <a href="services.html">Services</a></li>
+            <li> <a href="blog.html">Blog</a></li>
+            <li> <a href="contact.html">Contact</a></li>
+
+        </ul>
+    </nav>
+
+
+    <!-- landing page -->
+
+    <!-- slider -->
+    <div class="container">
+        <div class="slide-container active">
+            <div class="slide">
+                <div class="content">
+                    <h3>1. Chambers of Paranjay Tripathi</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore fugit neque repellendus hic veritatis odio nihil porro obcaecati odit ad?</p>
+                </div>
+                <div class="image">
+                    <img src="https://cache.careers360.mobi/media/article_images/2023/4/24/difference-between-lawyer-advocate.webp" alt="img1">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="slide-container">
+            <div class="slide">
+                <div class="content">
+                    <h3>2. Chambers of Paranjay Tripathi</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore fugit neque repellendus hic veritatis odio nihil porro obcaecati odit ad?</p>
+                </div>
+                <div class="image">
+                    <img src="https://cache.careers360.mobi/media/article_images/2023/4/24/difference-between-lawyer-advocate.webp" alt="img1">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="slide-container">
+            <div class="slide">
+                <div class="content">
+                    <h3>3. Chambers of Paranjay Tripathi</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore fugit neque repellendus hic veritatis odio nihil porro obcaecati odit ad?</p>
+                </div>
+                <div class="image">
+                    <img src="https://cache.careers360.mobi/media/article_images/2023/4/24/difference-between-lawyer-advocate.webp" alt="img1">
+                </div>
+            </div>
+        </div>
+        <div id="prev" onclick="prev()"> < </div>
+        <div id="next" onclick="next()"> > </div>
+
+        
+
+    </div>
+    
+        
+
+    <script>
+        let slides = document.querySelectorAll('.slide-container');
+        let index = 0;
+        function next(){
+            slides[index].classList.remove('active');
+            index = (index +1)%slides.length;
+            slides[index].classList.add('active');
+        }
+
+        function prev(){
+            slides[index].classList.remove('active');
+            index = (index - 1 + slides.length)%slides.length;
+            slides[index].classList.add('active');
+        }
+
+        //autoplay
+        setInterval(next,7000);
+    </script>
+    
+</body>
+</html>
