@@ -1,8 +1,46 @@
+
 body{
     margin: 0;
     padding: 0;
     background-color: gray;
 }
+
+/* popup */
+.popup{
+    background-color: whitesmoke;
+    width:50%;
+    height: fit-content;
+    padding: 30px 40px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 8px;
+    display: none;
+} @media(max-width:620px){
+  .popup{
+    width:80%;
+    bottom:0.05%;
+  }
+}
+.popup button{
+    display: block;
+    margin: 0 0 20px auto;
+    background-color: transparent;
+    font-size: 30px;
+    color: #c5c5c5;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.popup p{
+    font-size: 15px;
+    text-align: justify;
+    margin: 20px 0;
+}
+
+
+/* navbar */
 nav{
     width: 100%;
     background-color: white;
@@ -59,12 +97,13 @@ nav a:hover{
     }
     ul{
         position: fixed;
-        width: 100%;
+        width: 100vw;
         height:100vh;
         top:80px;
-        left: -100%;
+        left: -120%;
         transition: all .5s;
         text-align: center;
+        background:white;
 
     }
     nav ul li{

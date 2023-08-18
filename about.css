@@ -1,0 +1,133 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+}
+
+/* navbar */
+nav{
+    width: 100%;
+    background-color: white;
+    overflow: auto;
+}
+ul{
+    padding: 0;
+    margin: 0 0 0 80px;
+    list-style: none;
+}
+li{
+    float: left;
+}
+.logo img{
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 10px;
+    
+}
+
+nav a{
+    width: 100px;
+    display:block;
+    padding: 20px 25px;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+    text-align: center;
+}
+
+nav a:hover{
+    background-color: #abb4e3;
+    transition: 0.5s;
+    text-transform: uppercase;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: black;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor:pointer;
+    display: none;
+}
+#check{
+    display:none;
+
+}
+
+@media (max-width: 620px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100vw;
+        height:100vh;
+        top:80px;
+        left: -120%;
+        transition: all .5s;
+        text-align: center;
+        background:white;
+
+    }
+    nav ul li{
+        display: block;
+        margin: 40px 40px;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    nav a:hover{
+        background-color: #abb4e3;
+        transition: 0.5s;
+        text-transform: uppercase;
+
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+
+/* about section */
+
+.about{
+    background: url(https://files.cdn.printful.com/o/upload/blog-post-img-upload/9d/9de85d8bd35d7fb96c47e66f82ffb5fd_t) no-repeat left;
+    background-size: 55%;
+    background-color:lightgray;
+    overflow: hidden;
+    padding: 100px 0;
+}
+.inner-section{
+    width: 55%;
+    float: right;
+    background-color:#abb4e3;
+    padding: 80px;
+    box-shadow: 13px 12px 8px rgba(0,0,0,0.3);
+}
+.inner-section h1{
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: 900;
+}
+.text{
+    font-size: 13px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+@media (max-width:620px){
+    .about{
+        background-size: 100%;
+        
+    }
+    .inner-section{
+        width: 60%;
+        padding: 30px;
+        
+    }
+
+}
+
