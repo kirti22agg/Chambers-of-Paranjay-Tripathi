@@ -2,11 +2,12 @@
 body{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     background-color: gray;
 }
 
 /* popup */
-.popup{
+/* .popup{
     background-color: whitesmoke;
     width:50%;
     height: fit-content;
@@ -20,8 +21,27 @@ body{
 } @media(max-width:620px){
   .popup{
     width:80%;
-    
+    top:30%;
     bottom:30%;
+  }
+} */
+
+.popup{
+    background-color: whitesmoke;
+    width:500px;
+    padding: 30px 40px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 8px;
+    display: none;
+} @media(max-width:620px){
+  .popup{
+    background-color: whitesmoke;
+    width:80%;
+    height:80%;
+    bottom:0.05%;
   }
 }
 .popup button{
@@ -38,6 +58,10 @@ body{
     font-size: 15px;
     text-align: justify;
     margin: 20px 0;
+}  @media(max-width:620px){
+    .popup p {
+        font-size: 12px;
+    }
 }
 
 
