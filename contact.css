@@ -69,6 +69,7 @@ nav a:hover{
         transition: all .5s;
         text-align: center;
         background:white;
+        z-index: 1000;
 
     }
     nav ul li{
@@ -180,7 +181,7 @@ nav a:hover{
     display: inline-block;
     margin-top: 12px;
   }
-  .right-side .button input[type="button"]{
+  .right-side #btn{
     color: #fff;
     font-size: 18px;
     outline: none;
@@ -191,7 +192,7 @@ nav a:hover{
     cursor: pointer;
     transition: all 0.3s ease;
   }
-  .button input[type="button"]:hover{
+  #btn{
     background: #a1ace4;
   }
   @media (max-width: 950px) {
@@ -208,7 +209,7 @@ nav a:hover{
     .container{
       margin: 40px 10px 10px 10px;
       height: 100%;
-      width: 80%;
+      width: 75%;
     }
     .container .content{
       flex-direction: column-reverse;

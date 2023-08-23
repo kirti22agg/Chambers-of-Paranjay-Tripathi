@@ -1,7 +1,9 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: gray;
+    background-color: lightgray;
+    background-image: linear-gradient(rgba(165, 159, 159, 0.5),rgba(165, 159, 159, 0.5)),url();
+  
 }
 
 /* navbar */
