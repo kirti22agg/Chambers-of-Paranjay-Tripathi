@@ -65,7 +65,7 @@ nav a:hover{
         width: 100vw;
         height:100vh;
         top:80px;
-        left: -120%;
+        left: -125%;
         transition: all .5s;
         text-align: center;
         background:white;
