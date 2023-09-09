@@ -122,6 +122,7 @@ nav a:hover{
         transition: all .5s;
         text-align: center;
         background:white;
+        z-index: 1000;
 
     }
     nav ul li{
